@@ -7,6 +7,8 @@ import (
 	"avenssi/config"
 	"log"
 	"net/http"
+	"strconv"
+	"time"
 )
 
 func NewUUID() (string, error) {
@@ -19,6 +21,11 @@ func NewUUID() (string, error) {
 	uuid[8] = uuid[8]&^0xc0 | 0x80
 	uuid[6] = uuid[6]&^0xf0 | 0x40
 	return fmt.Sprintf("%x-%x", uuid[0:4], uuid[4:6]), err
+}
+
+func GetCurrentTimestampSec() int {
+	ts, _:=strconv.Atoi(strconv.FormatInt(time.Now().UnixNano()/1000000000, 10))
+	return ts
 }
 
 func SendDeleteVideoRequest(vid string)  {

@@ -1,4 +1,4 @@
 {
-  "lb_addr" : "127.0.0.1",
-  "cos_addr" : "lb-videos-1258876329.cos.ap-chengdu.myqcloud.com"
+  "lb_addr" : "172.19.0.6",
+  "cos_addr" : "https://lb1974-1258876329.cos.ap-chengdu.myqcloud.com"
 }

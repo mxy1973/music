@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
-	"video_server-master-原版/api/utils"
+	"video_server/api/utils"
 	"video_server/api/dbops"
 	"video_server/api/defs"
 	"video_server/api/session"
